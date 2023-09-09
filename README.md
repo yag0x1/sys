@@ -25,15 +25,6 @@ chmod u+x mylinuxconfs.sh
 
 ### Aliases
 
-add to the .zshrc the next command line
-
-```
-if [ -f ~/.zsh_aliases ]; then
-    . ~/.zsh_aliases
-fi]
-```
-
-
 https://www.youtube.com/watch?v=k8SycT32-yA
 
 ### Command linux
