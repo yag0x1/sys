@@ -14,7 +14,7 @@ ssh-keygen -o -t rsa -C "email@example.com"
 
 cat id_rsa.pub
 ```
-https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Key-Setup-Config-Ubuntu-Linux
+Put the keys in: https://github.com/settings/keys
 
 
 Following
