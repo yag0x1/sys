@@ -16,6 +16,11 @@ cat id_rsa.pub
 ```
 Put the keys in: https://github.com/settings/keys
 
+To run shell script:
+```
+chmod u+x mylinuxconfs.sh 
+./mylinuxconfs.sh 
+```
 
 Optional:
 ```
