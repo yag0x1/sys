@@ -4,6 +4,10 @@ Settings for automatic installations on my Linux
 For iniciate configurate the github
 
 ```
+git config --global user.name "yag0x1"
+
+git config --global user.email "yagx01@gmail.com"
+
 cd ~/.ssh
 
 ssh-keygen -o -t rsa -C "email@example.com"
