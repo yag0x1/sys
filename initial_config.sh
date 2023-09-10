@@ -10,7 +10,6 @@ sudo rm /var/lib/dpkg/lock-frontend
 sudo apt install btop -y #Resource monitor
 sudo apt install zsh -y #installing the zsh
 sudo apt install tmux -y #split terminal and save sections
-
 sudo apt install ranger -y #Files Manager on terminal
 
 sudo apt autoremove -y
