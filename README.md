@@ -17,20 +17,10 @@ cat id_rsa.pub
 Put the keys in: https://github.com/settings/keys
 
 
-Following
+Optional:
 ```
-chmod u+x mylinuxconfs.sh 
-
-./mylinuxconfs.sh 
+sudo apt install snapd -y
+sudo apt-get install gnome-software-plugin-snap -y
+sudo apt install flatpak -y
+sudo apt install gnome-software-plugin-flatpak -y
 ```
-
-
-## Tutorials:
-
-### Aliases
-
-https://www.youtube.com/watch?v=k8SycT32-yA
-
-### Command linux
-
-https://www.youtube.com/watch?v=JEhVB4VHsTI
