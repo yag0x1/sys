@@ -305,7 +305,16 @@ ifconfig                             : List ip addresses for all devices on the 
 apropos subject                      : List manual pages for subject
 usermount                            : Executes graphical application for mounting and unmounting file systems
 
-
+/etc/rc.d/init.d/lpd start           : Start the print daemon
+/etc/rc.d/init.d/lpd stop            : Stop the print daemon
+/etc/rc.d/init.d/lpd status          : Display status of the print daemon
+lpq                                  : Display jobs in print queue
+lprm                                 : Remove jobs from queue
+lpr                                  : Print a file
+lpc                                  : Printer control tool
+man subject | lpr                    : Print the manual page called subject as plain text
+man -t subject | lpr                 : Print the manual page called subject as Postscript output
+printtool                            : Start X printer setup interface
 
 
 
