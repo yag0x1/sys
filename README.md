@@ -224,7 +224,95 @@ updatedb                             : call it ddrive under the /mnt directory
 which missingfilename                : Mount hard disk “a” as a VFAT file system and
 grep textstringtofind                : Starting with the directory called dir
  
-/dir                                 :  list all files containing textstringtofind
+/dir                                 : list all files containing textstringtofind
+
+xvidtune                             : Run the X graphics tuning utility
+XF86Setup                            : Run the X configuration menu with automatic probing of graphics cards
+Xconfigurator                        : Run another X configuration menu with automatic probing of graphics cards
+xf86config                           : Run a text based X configuration menu
+
+ls -l                                : List files in current directory using long format
+ls -F                                : List files in current directory and indicate the file type
+ls -laC                              : List all files in current directory in long format and display in columns
+
+/sbin/e2fsck hda5                    : Execute the filesystem check utility on partition hda5
+fdformat /dev/fd0H1440               : Format the floppy disk in device fd0
+
+tar -cMf /dev/fd0                    : Backup the contents of the current directory and subdirectories to multiple floppy disks
+tail -f /var/log/messages            : Display the last 10 lines of the system log.
+cat /var/log/dmesg                   : Display the file containing the boot time messages - useful for locating problems. Alternatively, use the dmesg command.
+
+*                                    : wildcard - represents everything. eg. cp from/* to will copy all files in the from directory to the to directory
+
+?                                    : Single character wildcard. eg. cp config.? /configs will copy all files beginning with the name config. in the current directory to the directory named configs.
+
+[xyz]                                : Choice of character wildcards. eg. ls [xyz]* will list all files in the current directory starting with the letter x, y, or z.
+
+linux single                         : At the lilo prompt, start in single user mode. This is useful if you have forgotten your password. Boot in single user mode, then run the passwd command.
+ps                                   : List current processes
+
+/etc/profile                         : System wide environment variables for all users.
+/etc/fstab                           : List of devices and their associated mount points. Edit this file to add cdroms, DOS partitions and floppy drives at startup.
+
+/etc/motd                            : Message of the day broadcast to all users at login
+etc/rc.d/rc.local                    : Bash script that is executed at the end of login process. Similar to autoexec.bat in DOS
+
+
+/etc/HOSTNAME                        : Conatins full hostname including domain.
+/etc/cron.*                          : There are 4 directories that automatically execute all scripts within the directory at intervals of hour, day, week or month.
+/etc/hosts                           : A list of all know host names and IP addresses on the machine.
+/etc/httpd/conf                      : Paramters for the Apache web server
+/etc/inittab                         : Specifies the run level that the machine should boot into.
+/etc/resolv.conf                     : Defines IP addresses of DNS servers.
+/etc/smb.conf                        : Config file for the SAMBA server. Allows file and print sharing with Microsoft clients.
+
+~/.Xdefaults                         : Define configuration for some X-applications. ~ refers to user’s home directory.
+/etc/X11/XF86Config                  : Config file for X-Windows
+
+
+rm name                              : Remove a file or directory called name
+rm -rf name                          : Kill off an entire directory and all it’s includes files and subdirectories
+cp filename /home/dirname            : Copy the file called filename to the /home/dirname directory
+mv filename /home/dirname            : Move the file called filename to the /home/dirname directory 
+cat filetoview                       : Display the file called filetoview
+man -k keyword                       : Display man pages containing keyword
+more filetoview                      : Display the file called filetoview one page at a time, proceed to next page using the spacebar
+head filetoview                      : Display the first 10 lines of the file called filetoview
+head -20 filetoview                  : Display the first 20 lines of the file called filetoview
+tail filetoview                      : Display the last 10 lines of the file called filetoview
+tail -20 filetoview                  : Display the last 20 lines of the file called filetoview
+
+rpm -ihv name.rpm                    : Install the rpm package called name
+
+rpm -Uhv name.rpm                    : Upgrade the rpm package called name
+rpm -e package                       : Delete the rpm package called package
+rpm -l package                       : List the files in the package called package
+rpm -ql package                      : List the files and state the installed version of the package called package
+rpm -i --force package               : Reinstall the rpm package called name having deleted parts of it (not deleting using rpm -e)
+
+tar -zxvf archive.tar.gz or
+tar -zxvf archive.tgz                : Decompress the files contained in the zipped and tarred archive called archive
+./configure                          : Execute the script preparing the installed files for compiling
+
+
+adduser accountname                  : Create a new user call accountname
+passwd accountname                   : Give accountname a new password
+su                                   : Log in as superuser from current login
+exit                                 : Stop being superuser and revert to normal user
+
+ifconfig                             : List ip addresses for all devices on the machine
+
+apropos subject                      : List manual pages for subject
+usermount                            : Executes graphical application for mounting and unmounting file systems
+
+
+
+
+
+
+
+
+
 ```
 continuar: https://gse.ufsc.br/bezerra/disciplinas/Extensao/Linux/linuxmanual.pdf
 
