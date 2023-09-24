@@ -32,7 +32,7 @@ sudo apt install flatpak -y
 sudo apt install gnome-software-plugin-flatpak -y
 ```
 
-## Linux commands
+## Linux commands https://www.youtube.com/watch?v=JEhVB4VHsTI
 
 ### Comandos basicos (extraido do TLM - Hugo Cisneiros):
 ```
