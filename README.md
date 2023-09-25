@@ -1,8 +1,26 @@
 # My Linux
 
-## Settings for automatic installations on my Linux
+### Terminal tools install:
+```
+sudo apt-get update
+sudo apt-get upgrade
 
-### For iniciate configurate the github:
+sudo rm -rf /var/lib/apt/lists/lock
+sudo rm /var/lib/dpkg/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock-frontend
+
+sudo apt install btop -y #Resource monitor
+sudo apt install tmux -y #split terminal and save sections
+sudo apt install ranger -y #Files Manager on terminal
+
+sudo apt install zsh -y #installing the zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+sudo apt autoremove -y
+```
+
+### Initial configuration of github:
 ```
 git config --global user.name "yag0x1"
 
@@ -14,7 +32,7 @@ ssh-keygen -o -t rsa -C "yagx01@gmail.com"
 
 cat id_rsa.pub
 ```
-Put the keys in: https://github.com/settings/keys
+Put the key in: https://github.com/settings/keys
 
 
 ### To run shell script:
