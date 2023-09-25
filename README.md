@@ -17,6 +17,15 @@ sudo apt install ranger -y #Files Manager on terminal
 sudo apt install zsh -y #installing the zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+sudo apt-get install ninja-build gettext cmake unzip curl
+git clone https://github.com/neovim/neovim
+cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+git checkout stable
+sudo make install
+
+sh -c 'curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 sudo apt autoremove -y
 ```
 
