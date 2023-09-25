@@ -93,6 +93,19 @@ alias la='ls -A'
 alias l='ls -CF'
 alias update='sudo apt update'
 
+alias cc="clear"
+alias qq="exit"
+
+alias rr="ranger"
+alias tt="tmux"
+
+alias aptu="sudo apt-get update && upgrade"
+alias apti="sudo apt-get install"
+
+alias th="touch"
+alias rm="rm -rf"
+
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
