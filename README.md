@@ -24,8 +24,12 @@ cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
 git checkout stable
 sudo make install
 
-sh -c 'curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
+
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+nvim
 
 sudo apt-get remove gnome-terminal -y
 sudo apt autoremove -y
