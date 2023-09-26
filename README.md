@@ -13,6 +13,7 @@ sudo rm /var/lib/dpkg/lock-frontend
 sudo apt install btop -y #Resource monitor
 sudo apt install tmux -y #split terminal and save sections
 sudo apt install ranger -y #Files Manager on terminal
+sudo apt install alacritty -y
 
 sudo apt install zsh -y #installing the zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -26,6 +27,7 @@ sudo make install
 sh -c 'curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+sudo apt-get remove gnome-terminal -y
 sudo apt autoremove -y
 ```
 
