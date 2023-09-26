@@ -11,7 +11,10 @@ sudo rm /var/cache/apt/archives/lock
 sudo rm /var/lib/dpkg/lock-frontend
 
 sudo apt install btop -y #Resource monitor
+
 sudo apt install tmux -y #split terminal and save sections
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 sudo apt install ranger -y #Files Manager on terminal
 sudo apt install alacritty -y
 
