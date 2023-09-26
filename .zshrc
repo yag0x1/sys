@@ -114,7 +114,7 @@ alias aptu="sudo apt-get update && upgrade"
 alias apti="sudo apt-get install"
 
 alias th="touch"
-alias rm="rm -rf"
+alias rf="rm -rf"
 
 
 
