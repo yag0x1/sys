@@ -1,5 +1,8 @@
 # My Linux
 
+### Config Mozilla
+https://github.com/andreasgrafen/cascade
+
 ### Terminal tools install:
 ```
 sudo apt-get update
