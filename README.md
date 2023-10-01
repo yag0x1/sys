@@ -79,6 +79,11 @@ sudo apt-get install gnome-software-plugin-snap -y
 sudo apt install flatpak -y
 sudo apt install gnome-software-plugin-flatpak -y
 ```
+### Latex on linux
+https://github.com/junegunn/vim-plug
+```
+sudo apt-get install texlive-full
+``
 
 ## Linux commands https://www.youtube.com/watch?v=JEhVB4VHsTI
 
