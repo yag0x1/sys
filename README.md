@@ -364,25 +364,4 @@ man subject | lpr                    : Print the manual page called subject as p
 man -t subject | lpr                 : Print the manual page called subject as Postscript output
 printtool                            : Start X printer setup interface
 
-
-
-
-
-
-
 ```
-continuar: https://gse.ufsc.br/bezerra/disciplinas/Extensao/Linux/linuxmanual.pdf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
