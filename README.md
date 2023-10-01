@@ -62,6 +62,7 @@ git remote add origin https://github.com/username/repositoryname.git
 git add .
 git commit -m "first commit"
 git push origin main
+git branch --set-upstream-to=origin/main main
 ```
 
 ### To run shell script:
