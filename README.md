@@ -55,6 +55,14 @@ cat id_rsa.pub
 ```
 Put the key in: https://github.com/settings/keys
 
+Creating new repository from terminal:
+```
+git init
+git remote add origin https://github.com/username/repositoryname.git
+git add .
+git commit -m "first commit"
+git push origin main
+```
 
 ### To run shell script:
 ```
