@@ -14,31 +14,20 @@ sudo rm /var/cache/apt/archives/lock
 sudo rm /var/lib/dpkg/lock-frontend
 
 sudo apt install btop -y #Resource monitor
-
-sudo apt install tmux -y #split terminal and save sections
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
 sudo apt install ranger -y #Files Manager on terminal
-sudo apt install alacritty -y
 
 sudo apt install zsh -y #installing the zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-sudo apt-get install ninja-build gettext cmake unzip curl
-git clone https://github.com/neovim/neovim
-cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
-git checkout stable
-sudo make install
-
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-mv ~/.local/state/nvim ~/.local/state/nvim.bak
-mv ~/.cache/nvim ~/.cache/nvim.bak
-
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-nvim
-
-sudo apt-get remove gnome-terminal -y
 sudo apt autoremove -y
+```
+
+### Optional:
+```
+sudo apt install snapd -y
+sudo apt-get install gnome-software-plugin-snap -y
+sudo apt install flatpak -y
+sudo apt install gnome-software-plugin-flatpak -y
 ```
 
 ### Initial configuration of github:
@@ -70,20 +59,6 @@ git branch --set-upstream-to=origin/main main
 chmod u+x mylinuxconfs.sh
 ./initial_config.sh 
 ```
-
-
-### Optional:
-```
-sudo apt install snapd -y
-sudo apt-get install gnome-software-plugin-snap -y
-sudo apt install flatpak -y
-sudo apt install gnome-software-plugin-flatpak -y
-```
-### Latex on linux
-https://github.com/junegunn/vim-plug
-```
-sudo apt-get install texlive-full
-``
 
 ## Linux commands https://www.youtube.com/watch?v=JEhVB4VHsTI
 
