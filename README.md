@@ -3,33 +3,6 @@
 ### Config Mozilla
 https://github.com/andreasgrafen/cascade
 
-### Terminal tools install:
-```
-sudo apt-get update
-sudo apt-get upgrade
-
-sudo rm -rf /var/lib/apt/lists/lock
-sudo rm /var/lib/dpkg/lock
-sudo rm /var/cache/apt/archives/lock
-sudo rm /var/lib/dpkg/lock-frontend
-
-sudo apt install btop -y #Resource monitor
-sudo apt install ranger -y #Files Manager on terminal
-
-sudo apt install zsh -y #installing the zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-sudo apt autoremove -y
-```
-
-### Optional:
-```
-sudo apt install snapd -y
-sudo apt-get install gnome-software-plugin-snap -y
-sudo apt install flatpak -y
-sudo apt install gnome-software-plugin-flatpak -y
-```
-
 ### Initial configuration of github:
 ```
 git config --global user.name "yag0x1"
