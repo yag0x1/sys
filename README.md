@@ -33,9 +33,9 @@ chmod u+x mylinuxconfs.sh
 ./initial_config.sh 
 ```
 
-# .config
+## .config
 
-## RANGER: https://www.youtube.com/watch?v=FjQpzwp8J8E&t=467sl
+### RANGER: https://www.youtube.com/watch?v=FjQpzwp8J8E&t=467sl
 
 ```
 G - linha final
@@ -66,7 +66,7 @@ k - mostra todos os atalhos
 
 ```
 
-## TMUX: https://www.youtube.com/watch?v=iCipX7Y3EcY&t=1046s
+### TMUX: https://www.youtube.com/watch?v=iCipX7Y3EcY&t=1046s
 TMUX MOD: https://www.youtube.com/watch?v=DzNmUNvnB04&t=551s
 
 tmux: https://tmuxcheatsheet.com/
@@ -98,7 +98,7 @@ tmux kil-server -apaga todas as sessões
 
 ```
 
-## NVIM: https://www.youtube.com/watch?v=kZDT10nFiTY&t=790s
+### NVIM: https://www.youtube.com/watch?v=kZDT10nFiTY&t=790s
 astro: https://www.youtube.com/watch?v=LOi3eLnW56M&t=310s
 
 vim:https://www.youtube.com/watch?v=RZ4p-saaQkc&t=385s
