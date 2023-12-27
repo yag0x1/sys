@@ -36,4 +36,4 @@ import:
   - ~/.config/alacritty/catppuccin-mocha.yml
 
 shell:
-  program: /usr/bin/zsh
+  program: /usr/bin/fish

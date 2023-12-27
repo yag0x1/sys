@@ -1,26 +1,47 @@
-# My Linux
+# My Linux first Steps
 
-### Config Mozilla
-https://github.com/andreasgrafen/cascade
+## Install the packages
+### basics packages
+```
+sudo pacman -Syu alacritty ranger tmux fzf vim fish git fd bat fisher trash-cli
+```
+
+### Installing yay
+```
+cd ~ | mkdir git | cd git
+git clone https://aur.archlinux.org/yay.git | cd yay | makepkg -si
+```
+
+### Advanced packages
+```
+yay -S extension-manager
+```
+
+### plugins
+```
+fisher install PatrickF1/fzf.fish   # plugin for fish
+```
+
+## Others configurations
+### fish as default
+```
+chsh -s /usr/bin/fish
+```
 
 ### Initial configuration of github:
 ```
 git config --global user.name "yag0x1"
-
 git config --global user.email "yagx01@gmail.com"
-
 cd ~/.ssh
-
 ssh-keygen -o -t rsa -C "yagx01@gmail.com"
-
 cat id_rsa.pub
 ```
 Put the key in: https://github.com/settings/keys
 
-Creating new repository from terminal:
+### Creating new repository from terminal:
 ```
 git init
-git remote add origin https://github.com/username/repositoryname.git
+git remote add origin https://github.com/yag0x1/repositoryname.git
 git add .
 git commit -m "first commit"
 git push origin main
@@ -33,7 +54,7 @@ chmod u+x mylinuxconfs.sh
 ./initial_config.sh 
 ```
 
-## .config
+## Tutorials
 
 ### RANGER: https://www.youtube.com/watch?v=FjQpzwp8J8E&t=467sl
 
@@ -98,10 +119,7 @@ tmux kil-server -apaga todas as sessões
 
 ```
 
-### NVIM: https://www.youtube.com/watch?v=kZDT10nFiTY&t=790s
-astro: https://www.youtube.com/watch?v=LOi3eLnW56M&t=310s
-
-vim:https://www.youtube.com/watch?v=RZ4p-saaQkc&t=385s
+### VIM: https://www.youtube.com/watch?v=RZ4p-saaQkc&t=385s
 
 ```
 
@@ -137,7 +155,7 @@ exit - fechar terminal
 
 ```
 
-## Linux commands https://www.youtube.com/watch?v=JEhVB4VHsTI
+### Linux commands https://www.youtube.com/watch?v=JEhVB4VHsTI
 
 ### Comandos basicos (extraido do TLM - Hugo Cisneiros):
 ```
@@ -391,7 +409,7 @@ rpm -ihv name.rpm                    : Install the rpm package called name
 
 rpm -Uhv name.rpm                    : Upgrade the rpm package called name
 rpm -e package                       : Delete the rpm package called package
-rpm -l package                       : List the files in the package called package
+rpm -l package                       : List the files in the sudo pacman -S fishpackage called package
 rpm -ql package                      : List the files and state the installed version of the package called package
 rpm -i --force package               : Reinstall the rpm package called name having deleted parts of it (not deleting using rpm -e)
 
