@@ -14,7 +14,7 @@ git clone https://aur.archlinux.org/yay.git | cd yay | makepkg -si
 
 ### Advanced packages
 ```
-yay -S extension-manager
+yay -S extension-manager    # to install gnome extensions
 ```
 
 ### plugins
@@ -23,9 +23,10 @@ fisher install PatrickF1/fzf.fish   # plugin for fish
 ```
 
 ## Others configurations
-### fish as default
 ```
-chsh -s /usr/bin/fish
+cp -r ~/git/mylinux/.config/ ~/ # Copy the folders in https://github.com/yag0x1/mylinux/tree/main/.config in the local .config file
+chsh -s /usr/bin/fish           # fish as default
+ranger --copy-config=all        # ranger configuration to .config 
 ```
 
 ### Initial configuration of github:
