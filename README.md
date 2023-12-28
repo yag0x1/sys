@@ -80,7 +80,7 @@ chmod u+x mylinuxconfs.sh
 - app hider
 - compact top bar
 - Dash to Dock
-- Disable worksapce switcher overlay
+- Disable worksapce switcher
 - Fix focus on workspace switcher overlay
 - Hide worksapece Thumbnails
 - Pano clipboard
