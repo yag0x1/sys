@@ -77,14 +77,20 @@ chmod u+x mylinuxconfs.sh
 ```
 
 ## Extensions (Gnome Shell extensions manager)
-- top hat
-- compact top bar
-- pano clipboard
-- simple worksapces
 - app hider
-- user themes #with pop theme
-- worksapce indicator 
+- compact top bar
+- Dash to Dock
+- Disable worksapce switcher overlay
+- Fix focus on workspace switcher overlay
+- Hide worksapece Thumbnails
+- Pano clipboard
+- Space Bar
+- Top hat
 
+- Auto Move Windows
+- Pop Shell
+- User themes #with pop theme
+  
 
 ### To install virtual machine
 ```
