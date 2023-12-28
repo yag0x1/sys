@@ -35,7 +35,7 @@ function fish_prompt
     end
 
     if [ (_is_git_dirty) ]
-      set -l dirty "🔸"
+      set -l dirty "$yellow ◇"
       set git_info "$git_info$dirty"
     end
   end
