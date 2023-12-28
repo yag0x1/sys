@@ -90,6 +90,12 @@ chmod u+x mylinuxconfs.sh
 - Auto Move Windows
 - Pop Shell
 - User themes #with pop theme
+
+Opcionals:
+- Hide Activities Button
+- Workspaces indicator by open apps
+
+  
   
 
 ### To install virtual machine
