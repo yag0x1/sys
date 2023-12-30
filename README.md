@@ -80,7 +80,7 @@ chmod u+x mylinuxconfs.sh
 - app hider
 - compact top bar
 - Dash to Dock
-- Disable worksapce switcher overlay
+- Disable worksapce switcher
 - Fix focus on workspace switcher overlay
 - Hide worksapece Thumbnails
 - Pano clipboard
@@ -90,6 +90,12 @@ chmod u+x mylinuxconfs.sh
 - Auto Move Windows
 - Pop Shell
 - User themes #with pop theme
+
+Opcionals:
+- Hide Activities Button
+- Workspaces indicator by open apps
+
+  
   
 
 ### To install virtual machine
