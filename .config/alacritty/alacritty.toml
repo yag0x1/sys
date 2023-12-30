@@ -1,0 +1,37 @@
+import = ["/home/yag/.config/alacritty/catppuccin-mocha.toml"]
+live_config_reload = true
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "FiraMono Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "FiraMono Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "FiraMono Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "FiraMono Nerd Font Mono"
+style = "Regular"
+
+[shell]
+program = "/usr/bin/fish"
+
+[window]
+decorations = "None"
+dynamic_padding = false
+opacity = 0.8 
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+#[window.scrolling]
+#history = 10000
+#multiplier = 3

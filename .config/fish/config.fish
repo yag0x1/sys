@@ -1,6 +1,15 @@
 set fish_greeting
 
 
+fzf_configure_bindings --variables=\e\cv
+fzf_configure_bindings --directory=\e\cf
+fzf_configure_bindings --history=\e\cr
+fzf_configure_bindings --git_log=\e\cl
+fzf_configure_bindings --git_status=\e\cs
+fzf_configure_bindings --processes=\e\cp
+
+
+
 
 #Sashimi https://github.com/isacikgoz/sashimi/blob/master/fish_prompt.fish
 function fish_prompt
@@ -16,8 +25,8 @@ function fish_prompt
   set -g whitespace " "
 
   if test $last_status = 0
-    set initial_indicator "$green 🛰️ "
-    set status_indicator "$normal❯"
+	    set initial_indicator " 🛰️ "
+    set status_indicator "$blue❯"
   else
     set initial_indicator "$red✘ $last_status"
     set status_indicator "$red❯ "
