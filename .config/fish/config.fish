@@ -1,16 +1,6 @@
 set fish_greeting
 
 
-fzf_configure_bindings --variables=\e\cv
-fzf_configure_bindings --directory=\e\cf
-fzf_configure_bindings --history=\e\cr
-fzf_configure_bindings --git_log=\e\cl
-fzf_configure_bindings --git_status=\e\cs
-fzf_configure_bindings --processes=\e\cp
-
-
-
-
 #Sashimi https://github.com/isacikgoz/sashimi/blob/master/fish_prompt.fish
 function fish_prompt
   set -l last_status $status
