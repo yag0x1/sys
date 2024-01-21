@@ -1,0 +1,6 @@
+config.load_autoconfig()
+config.bind('+','zoom-in')
+config.bind('au', 'adblock-update')
+config.bind('xz', 'set statusbar.show always')
+config.bind('xc', 'set statusbar.show never')
+config.bind('xx', 'config-cycle tabs.show always switching')
