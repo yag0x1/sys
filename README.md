@@ -51,6 +51,15 @@ sudo pacman -S libgda6 #For the pano extension
 sudo pacman -S wmctrl
 ```
 
+### VPN
+```
+sudo pacman strongswan networkmanager-strongswan
+```
+
+###
+![image](https://github.com/yag0x1/mylinux/assets/52602415/001c6b26-fbb1-479b-9b89-1f1f51fba669)
+
+
 ### Initial configuration of github:
 ```
 git config --global user.name "yag0x1"
