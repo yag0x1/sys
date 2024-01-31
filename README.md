@@ -56,12 +56,6 @@ sudo pacman -S wmctrl
 sudo pacman strongswan networkmanager-strongswan
 ```
 
-### Extensions
-![image](https://github.com/yag0x1/mylinux/assets/52602415/cc3a9a74-804b-43c9-b79e-82500eafd2b5)
-
-![image](https://github.com/yag0x1/mylinux/assets/52602415/1a7ec5d4-7bf4-45b2-885a-42fd860498e3)
-
-
 ### Initial configuration of github:
 ```
 git config --global user.name "yag0x1"
@@ -89,25 +83,9 @@ chmod u+x mylinuxconfs.sh
 ```
 
 ## Extensions (Gnome Shell extensions manager)
-- app hider
-- compact top bar
-- Dash to Dock
-- Disable worksapce switcher
-- Fix focus on workspace switcher overlay
-- Hide worksapece Thumbnails
-- Pano clipboard
-- Space Bar
-- Top hat
+![image](https://github.com/yag0x1/mylinux/assets/52602415/cc3a9a74-804b-43c9-b79e-82500eafd2b5)
 
-- Auto Move Windows
-- Pop Shell
-- User themes #with pop theme
-
-Opcionals:
-- Hide Activities Button
-- Workspaces indicator by open apps
-
-  
+![image](https://github.com/yag0x1/mylinux/assets/52602415/1a7ec5d4-7bf4-45b2-885a-42fd860498e3)
   
 
 ### To install virtual machine
