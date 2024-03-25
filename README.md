@@ -4,7 +4,6 @@
 ### basics packages
 ```
 sudo pacman -Syu alacritty ranger tmux fzf vim fish git fd bat fisher trash-cli gnome-packagekit unzip unrar
-sudo pacman -S qutebrowser
 ```
 
 ### Installing yay
