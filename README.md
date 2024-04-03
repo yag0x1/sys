@@ -92,12 +92,13 @@ chmod u+x mylinuxconfs.sh
 ./initial_config.sh 
 ```
 
-## Extensions (Gnome Shell extensions manager)
-![image](https://github.com/yag0x1/mylinux/assets/52602415/cc3a9a74-804b-43c9-b79e-82500eafd2b5)
-
-![image](https://github.com/yag0x1/mylinux/assets/52602415/1a7ec5d4-7bf4-45b2-885a-42fd860498e3)
+## Extensions Installed
+- Compact Top Bar
+- TopHat
+- Space Bar
+- Clipboard History
+- Pano Clipboard
   
-
 ### To install virtual machine
 ```
 sudo pacman -S virt-manager virt-viewer qemu vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf swtpm
