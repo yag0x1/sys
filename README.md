@@ -1,4 +1,4 @@
-# My Linux first Steps
+# My Linux Configurations
 
 ## Dual boot Windows 11
 ```
@@ -12,61 +12,11 @@ sudo rm -rf /mnt/windows
 ```
 
 ## Install the packages
-### basics packages
 ```
-sudo pacman -Syu alacritty ranger tmux fzf vim fish git fd bat fisher trash-cli gnome-packagekit unzip unrar
-```
-
-### Installing yay
-```
-cd ~ | mkdir git | cd git
-git clone https://aur.archlinux.org/yay.git | cd yay | makepkg -si
+sudo apt install alacritty ranger fzf vim #fish git fd bat fisher trash-cli gnome-packagekit unzip unrar
 ```
 
-### Advanced packages
-```
-yay -S extension-manager    # to install gnome extensions
-yay -S gnome-shell-extension-pop-shell-git
-yay -S pop-theme #configurate pop dark theme
-yay -S dconf-editor
-yay -S gnome-packagekit-git   #to unistall gnome packages
-yay -S gnome-package          
-```
-
-### Plugins
-```
-fisher install PatrickF1/fzf.fish   # plugin for fish
-mkdir -p ~/.local/share/fonts & cd ~/.local/share/fonts & curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraMono.tar.xz && tar -xf FiraMono.tar.xz    # Installing nerd fonts
-
-```
-
-## Configurations
-```
-sudo pacman -Rs epiphany gnome-weather gnome-tour gnome-maps  gnome-contacts gnome-music gnome-console gnome-clocks gnome-calendar # Removing default packages
-cp -r ~/git/mylinux/.config/ ~/ # Copy the folders in https://github.com/yag0x1/mylinux/tree/main/.config in the local .config file
-cp -r ~/git/mylinux/fish_history ~/.local/share/fish  #copy the history of fish
-chsh -s /usr/bin/fish           # fish as default
-ranger --copy-config=all        # ranger configuration to .config 
-```
-
-### Others
-```
-sudo pacman -S gnome-shell-extensions             #For gnome extensions
-git clone https://aur.archlinux.org/gnome-browser-connector.git
-cd gnome-browser-connector
-makepkg -si
-
-sudo pacman -S libgda6 #For the pano extension
-
-sudo pacman -S wmctrl
-```
-
-### VPN
-```
-sudo pacman strongswan networkmanager-strongswan
-```
-
-### Initial configuration of github:
+## GitHub Initial configuration
 ```
 git config --global user.name "yag0x1"
 git config --global user.email "yagx01@gmail.com"
@@ -76,7 +26,7 @@ cat id_rsa.pub
 ```
 Put the key in: https://github.com/settings/keys
 
-### Creating new repository from terminal:
+## Creating new GitHub repository from terminal
 ```
 git init
 git remote add origin https://github.com/yag0x1/repositoryname.git
@@ -86,41 +36,24 @@ git push origin main
 git branch --set-upstream-to=origin/main main
 ```
 
-### To run shell script:
+## To run shell script:
 ```
 chmod u+x mylinuxconfs.sh
 ./initial_config.sh 
 ```
 
-## Extensions Installed
+## Extensions
 - Compact Top Bar
 - TopHat
 - Space Bar
 - Clipboard History
 - Pano Clipboard
-  
-### To install virtual machine
-```
-sudo pacman -S virt-manager virt-viewer qemu vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf swtpm
-# Remove # at the following lines: unix_sock_group = "libvirt" and unix_sock_rw_perms = "0770"
-sudo vim /etc/libvirt/libvirtd.conf
-
-sudo usermod -a -G kvm,libvirt $(whoami)
-sudo systemctl enable libvirtd
-sudo systemctl start libvirtd
-
-# user = "your username"
-# group = "your username"
-sudo vim /etc/libvirt/qemu.conf
-
-sudo systemctl restart libvirtd
-sudo virsh net-autostart default
-```
 
 
-## Tutorials
 
-### RANGER: https://www.youtube.com/watch?v=FjQpzwp8J8E&t=467sl
+# Tutorials
+
+## RANGER: https://www.youtube.com/watch?v=FjQpzwp8J8E&t=467sl
 
 ```
 G - linha final
@@ -151,7 +84,7 @@ k - mostra todos os atalhos
 
 ```
 
-### TMUX: https://www.youtube.com/watch?v=iCipX7Y3EcY&t=1046s
+## TMUX: https://www.youtube.com/watch?v=iCipX7Y3EcY&t=1046s
 TMUX MOD: https://www.youtube.com/watch?v=DzNmUNvnB04&t=551s
 
 tmux: https://tmuxcheatsheet.com/
@@ -183,7 +116,7 @@ tmux kil-server -apaga todas as sessões
 
 ```
 
-### VIM: https://www.youtube.com/watch?v=RZ4p-saaQkc&t=385s
+## VIM: https://www.youtube.com/watch?v=RZ4p-saaQkc&t=385s
 
 ```
 
@@ -219,9 +152,9 @@ exit - fechar terminal
 
 ```
 
-### Linux commands https://www.youtube.com/watch?v=JEhVB4VHsTI
+## Linux commands https://www.youtube.com/watch?v=JEhVB4VHsTI
 
-### Comandos basicos (extraido do TLM - Hugo Cisneiros):
+## Comandos basicos (extraido do TLM - Hugo Cisneiros):
 ```
 ls                                   : Lista os arquivos, mesmo que dir do DOS
 Atributos comuns:
@@ -374,9 +307,9 @@ write                                : Usado para mandar mensagens para outro us
 
 ```
 
-### Useful Linux Commands
+## Useful Linux Commands
 
-#### Starting & Stopping:
+### Starting & Stopping:
 ```
 shutdown -h now                      : Shutdown the system now and do not reboot
 halt                                 : Stop all processes - same as above
@@ -386,7 +319,7 @@ reboot                               : Stop all processes and then reboot - same
 startx                               : Start the X system
 ```
 
-#### Accessing & mounting file systems:
+### Accessing & mounting file systems:
 ```
 mount -t iso9660 /dev/cdrom          : Mount the device cdrom and 
 /mnt/cdrom                           : call it cdrom under the /mnt directory
@@ -400,7 +333,7 @@ mount -t vfat /dev/hda1              : Mount hard disk “a” as a VFAT file sy
 umount /mnt/cdrom                    : Unmount the cdrom
 ```
 
-#### Finding files and text within files:
+### Finding files and text within files:
 ```
 find / -name fname                   : Starting with the root directory, look for the file called fname
 find / -name ”*fname*”               : Starting with the root directory, look for the file containing the string fname
