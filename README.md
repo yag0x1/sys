@@ -11,11 +11,6 @@ sudo umount /mnt/windows
 sudo rm -rf /mnt/windows
 ```
 
-## Install the packages
-```
-sudo apt install alacritty ranger fzf vim #fish git fd bat fisher trash-cli gnome-packagekit unzip unrar
-```
-
 ## GitHub Initial configuration
 ```
 git config --global user.name "yag0x1"
@@ -48,75 +43,8 @@ chmod u+x mylinuxconfs.sh
 - Space Bar
 - Clipboard History
 - Pano Clipboard
+- Disable Workspace Switcher
 
-
-
-# Tutorials
-
-## RANGER: https://www.youtube.com/watch?v=FjQpzwp8J8E&t=467sl
-
-```
-G - linha final
-g g - linha inicial
-
-J e K - 11 linhas antes e depois
-
-r - como abrir arquivo
-y y - copiar
-p p - colar
-d d - cortar
-:delete - apagar
-
-:mkdir - criar pasta
-:touch - criar arquivo
-
-S - terminal ficando no caminho atual
-exit - para sair do terminal e voltar ao ranger
-
-:search nome-arquivo - para pequisar nome de arquivo
-
-control n - nova aba
-tab - trocar de aba
-alt  numero - trocar a para aba numero
-q - apagar aba
-
-k - mostra todos os atalhos
-
-```
-
-## TMUX: https://www.youtube.com/watch?v=iCipX7Y3EcY&t=1046s
-TMUX MOD: https://www.youtube.com/watch?v=DzNmUNvnB04&t=551s
-
-tmux: https://tmuxcheatsheet.com/
-```
-​tm = control + b  - tecla me​​​stre
-
-tm + c - criar nova janela
-tm + numero da janela - ir para janela especifica
-tm + n e p - movimenta entre janelas anterior e seguinte
-
-tm + % - dividir vertical terminal
-tm + " - modo horizontal terminal
-tm + h e l - para movimentar entre terminais
-tm + z - para focar em terminal que esteja dividido
-
-tm + d - sair do tmux
-
-tmux ls - visualizar sessões
-tmux a -t nome - abrir sessão especifica
-
-tm + $ - renomear a sessão
-tm + w - navegar entre as janelas 
-tm + s navegar entre sessões
-
-tmux new -S nome - entrar em uma sessão nome
-tmux kill-session -t nome - fechar sessão
-tmux kil-server -apaga todas as sessões 
-
-
-```
-
-## VIM: https://www.youtube.com/watch?v=RZ4p-saaQkc&t=385s
 
 ```
 
@@ -151,8 +79,6 @@ spc v - terminal no vertical
 exit - fechar terminal
 
 ```
-
-## Linux commands https://www.youtube.com/watch?v=JEhVB4VHsTI
 
 ## Comandos basicos (extraido do TLM - Hugo Cisneiros):
 ```
