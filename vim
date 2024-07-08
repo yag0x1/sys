@@ -32,9 +32,6 @@
 > - f for find
 > - c for change
 > - t for unTil
-> -   
-> - 
-> - 
 
 > - d{motion} - delete text covered by motion
 >   - d2w => deletes two words
@@ -43,21 +40,12 @@
 > - dd - delete line
 > - D - delete from cursor until the end of the line
 
-
-
 - Use `gd` to **g**o to **d**efinition of whatever is under your cursor.
 - Use `gf` to **g**o to a **f**ile in an import.
 - Type `gg` to go to the top of the file.
 - Use `{line}gg` to go to a specific line.
 - Use `G` to go to the end of the file.
 - Type `%` jump to matching `({[]})`.
-
-
-
-
-
-
-
 
 - `{count}{command}` multiply the effect of a command: `5j`, `2/{}`...
 - `/{pattern} .*`  
