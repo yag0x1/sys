@@ -33,4 +33,32 @@ GRUB_SAVEDEFAULT=true
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+## Install paru
+```
+sudo pacman -S --needed base-devel git
+mkdir ~/git && cd ~/git
+git clone https://aur.archlinux.org/paru.git
+makepkg -si
+```
+
+## pacmnan:
+```
+
+```
+
+## paru:
+```
+google-chrome extension-manager
+```
+
+
+## Extensions
+* hide top bar
+* Compact top bar
+* Hide Activities Button
+* Hide Top Bar
+* Space Bar
+* Clicboard History 
+
+
 
