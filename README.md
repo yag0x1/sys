@@ -58,7 +58,6 @@ google-chrome extension-manager
 * Hide Activities Button
 * Hide Top Bar
 * Space Bar
-* Clicboard History 
-
-
+* Clicboard History
+* Hide the Dock in overview
 
