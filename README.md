@@ -37,7 +37,14 @@ zsh-autosuggestions
 zsh-fzf-history-search
 )
 ```
-
+## Fira Code Nerd Font
+```
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/FiraCode.zip \
+&& cd ~/.local/share/fonts \
+&& unzip FiraCode.zip \
+&& rm FiraCode.zip \
+&& fc-cache -fv
+```
 
 
 ## Basic Linux Commands
