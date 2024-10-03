@@ -22,6 +22,23 @@ cat id_rsa.pub
 ```
 Put the key in: https://github.com/settings/keys
 
+## Autocomplete and fzf History Search in zsh
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/joshskidmore/zsh-fzf-history-search ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-fzf-history-search
+```
+Put in .zshrc :
+```
+plugins=(
+git
+zsh-syntax-highlighting
+zsh-autosuggestions
+zsh-fzf-history-search
+)
+```
+
+
 
 ## Basic Linux Commands
 
