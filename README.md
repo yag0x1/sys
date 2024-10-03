@@ -1,5 +1,17 @@
 # Linux Configurations
 
+## Dual boot automated configuration
+
+```
+sudo mkdir /mnt/windows
+sudo mount /dev/nvme0n1p1 /mnt/windows
+sudo cp -r /mnt/windows/EFI/Microsoft /boot/efi/EFI
+sudo ls /boot/efi/EFI #optional
+sudo vim /boot/efi/loader/loader.conf
+sudo umount /mnt/windows
+sudo rm -rf /mnt/windows
+```
+
 ## GitHub automated initial configuration
 ```
 git config --global user.name "yag0x1"
