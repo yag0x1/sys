@@ -54,7 +54,7 @@ google-chrome extension-manager dconf-editor
 ## pacman:
 ```
 sudo pacman -Rs epiphany gnome-weather gnome-tour gnome-maps  gnome-contacts gnome-music gnome-console gnome-clocks gnome-calendar # Removing default packages
-sudo pacman -Syu zsh ranger tmux fzf vim git
+sudo pacman -Syu zsh ranger tmux fzf neovim git
 
 ```
 
@@ -71,20 +71,6 @@ sudo mv filetoremove /trash
 ## VPN
 ```
 sudo pacman -S strongswan networkmanager-strongswan
-```
-
-## Autocomplete zsh
-```
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-Put in .zshrc :
-```
-plugins=(
-git
-zsh-syntax-highlighting
-zsh-autosuggestions
-)
 ```
 
 ## Search in history:
