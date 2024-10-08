@@ -46,6 +46,19 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
 && fc-cache -fv
 ```
 
+## Catppuccin theme for tmux
+```
+mkdir -p ~/.config/tmux/plugins/catppuccin
+git clone https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
+touch ~/.config/tmux/tmux.conf
+```
+Put in tmux.conf : 
+```
+run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
+```
+```
+tmux source ~/.config/tmux/tmux.conf
+```
 
 ## Basic Linux Commands
 
