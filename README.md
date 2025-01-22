@@ -1,15 +1,14 @@
 # Linux Configurations
 
-## Dual boot automated configuration
+## First installs
 
 ```
-sudo mkdir /mnt/windows
-sudo mount /dev/nvme0n1p1 /mnt/windows
-sudo cp -r /mnt/windows/EFI/Microsoft /boot/efi/EFI
-sudo ls /boot/efi/EFI #optional
-sudo vim /boot/efi/loader/loader.conf
-sudo umount /mnt/windows
-sudo rm -rf /mnt/windows
+# updates
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove
+# list to install
+sudo apt install zsh fzf neovim ranger
+# list to remove                                   
+sudo apt remove thunderbird                                            
 ```
 
 ## GitHub automated initial configuration
