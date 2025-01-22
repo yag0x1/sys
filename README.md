@@ -1,6 +1,6 @@
 # Linux Configurations
 
-## First installs
+## First Steps
 
 ```
 # updates
@@ -11,33 +11,54 @@ sudo apt install zsh fzf neovim ranger
 sudo apt remove thunderbird                                            
 ```
 
-## GitHub automated initial configuration
-```
-git config --global user.name "yag0x1"
-git config --global user.email "yagx01@gmail.com"
-cd ~/.ssh
-ssh-keygen -o -t rsa -C "yagx01@gmail.com"
-cat id_rsa.pub
-```
-Put the key in: https://github.com/settings/keys
+## First Setups
 
-## Autocomplete and fzf History Search in zsh
 ```
+# ohmyzsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+```
+# zsh-syntax-highlighting, zsh-autocomplete and zsh-fzf-history-search
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/joshskidmore/zsh-fzf-history-search ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-fzf-history-search
 ```
-Put in .zshrc :
 ```
-plugins=(
-git
-zsh-syntax-highlighting
-zsh-autosuggestions
-zsh-fzf-history-search
-)
+# git ssh
+git config --global user.name "yag0x1"
+git config --global user.email "yagx01@gmail.com"
+cd ~/ && mkdir .ssh && cd ~/.ssh
+ssh-keygen -o -t rsa -C "yagx01@gmail.com"
+cat id_rsa.pub
 ```
-## Fira Code Nerd Font
+> Put the key in: https://github.com/settings/keys
+
 ```
+# clone sys
+cd ~/ && mkdir git && cd ~/git
+git clone git@github.com:yag0x1/sys.git
+```
+> copy ~/git/sys/.config/...  to ~/.config/...
+
+```
+# copy .zsh
+rm ~/.zshrc  ~/.zsh_history
+cp ~/git/sys/home/.zshrc ~/.zshrc
+cp ~/git/sys/home/.zsh_history ~/.zsh_history
+source ~/.zshrc ~/.zsh_history                                         
+```
+> reboot
+
+## Another Setups
+```
+# astrovim https://docs.astronvim.com/
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+nvim
+```
+
+```
+# nerd fonts
 wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/FiraCode.zip \
 && cd ~/.local/share/fonts \
 && unzip FiraCode.zip \
@@ -45,13 +66,13 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
 && fc-cache -fv
 ```
 
-## Catppuccin theme for tmux
 ```
+# catppuccin theme for tmux
 mkdir -p ~/.config/tmux/plugins/catppuccin
 git clone https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
 touch ~/.config/tmux/tmux.conf
 ```
-Put in tmux.conf : 
+> Put in tmux.conf : 
 ```
 run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
 ```
