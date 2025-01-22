@@ -1,4 +1,3 @@
-# Linux Configurations
 
 ## First Steps
 
