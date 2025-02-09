@@ -1,9 +1,9 @@
 (
-    view: List,
+    view: Grid,
     folders_first: true,
     show_hidden: false,
     icon_sizes: (
-        list: 150,
-        grid: 325,
+        list: 100,
+        grid: 125,
     ),
 )
